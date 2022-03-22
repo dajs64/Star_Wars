@@ -1,0 +1,490 @@
+Last login: Mon Mar 21 19:52:20 on ttys000
+/Users/devinsylvester/.zshrc:102: command not found: C
+/Users/devinsylvester/.zshrc:103: command not found: D
+➜  ~ cd ..
+➜  /Users devinsylvester 
+➜  ~ ls
+Applications       Downloads          Music              SEI_321
+Desktop            Library            Pictures           Star_Wars
+Documents          Movies             Public             Visual Studio Code
+➜  ~ Star_Wars 
+➜  Star_Wars git:(master) ✗ ls
+Help me, Obi-Wan…You’re my only hope.
+README.md
+act1.sh
+act2.sh
+act3.sh
+empire
+rebellion
+solution.txt
+touch
+➜  Star_Wars git:(master) ✗ rm rv/ obi_wan
+rm: rv/: No such file or directory
+rm: obi_wan: No such file or directory
+➜  Star_Wars git:(master) ✗ rmdir obi_wan
+rmdir: obi_wan: No such file or directory
+➜  Star_Wars git:(master) ✗ db_deadlock README.md empire 
+usage: db_deadlock [-Vv] [-a e | m | n | o | W | w | y]
+	[-h home] [-L file] [-P password] [-t sec.usec]
+➜  Star_Wars git:(master) ✗ empire 
+➜  empire git:(master) ✗ ls
+death_star            emperor_palpatine.txt
+➜  empire git:(master) ✗ death_star 
+➜  death_star git:(master) ✗ ls
+darth_vader.txt   mellennium_falcon
+➜  death_star git:(master) ✗ mellennium_falcon 
+➜  mellennium_falcon git:(master) ✗ ls
+chewbacca.txt      luke_skywalker.txt princess_leia.txt
+han_solo.txt       obi_wan.txt
+➜  mellennium_falcon git:(master) ✗ rmdir obi_wan
+rmdir: obi_wan: No such file or directory
+➜  mellennium_falcon git:(master) ✗ rm obi_wan.txt 
+rm: obi_wan.txt: is a directory
+➜  mellennium_falcon git:(master) ✗ cd ..
+➜  death_star git:(master) ✗ cd ..
+➜  empire git:(master) ✗ cd ..
+➜  Star_Wars git:(master) ✗ cd ..
+➜  ~ ls
+Applications       Downloads          Music              SEI_321
+Desktop            Library            Pictures           Star_Wars
+Documents          Movies             Public             Visual Studio Code
+➜  ~ open .
+➜  ~ ls
+Applications       Downloads          Music              SEI_321
+Desktop            Library            Pictures           Visual Studio Code
+Documents          Movies             Public
+➜  ~ SEI_321 
+➜  SEI_321 ls
+code-alongs  fundamentals labs         reflections
+deliverables hello_world  projects     repos
+➜  SEI_321 deliverables 
+➜  deliverables ls
+Star_Wars
+➜  deliverables Star_Wars 
+➜  Star_Wars git:(master) ✗ code .
+➜  Star_Wars git:(master) ✗ cd ..
+➜  deliverables rm Star_Wars 
+rm: Star_Wars: is a directory
+➜  deliverables ls
+Star_Wars
+➜  deliverables rm -r Star_Wars 
+override r--r--r--  devinsylvester/staff for Star_Wars/.git/objects/pack/pack-864005c93fd2cd4f1cda69f45ae8edf84c6c1daf.pack? y
+override r--r--r--  devinsylvester/staff for Star_Wars/.git/objects/pack/pack-864005c93fd2cd4f1cda69f45ae8edf84c6c1daf.idx? y
+➜  deliverables ls
+➜  deliverables mkdir star_wars
+➜  deliverables ls
+star_wars
+➜  deliverables star_wars 
+➜  star_wars empire rebellion
+zsh: command not found: empire
+➜  star_wars ls
+➜  star_wars mkdir empire rebellion 
+➜  star_wars ls
+empire    rebellion
+➜  star_wars empire 
+➜  empire mkdir  darth_vader
+➜  empire darth_vader 
+➜  darth_vader touch "...heavy breathing..."
+➜  darth_vader cd ..
+➜  empire rm rf/ darth_vader 
+rm: rf/: No such file or directory
+rm: darth_vader: is a directory
+➜  empire rm -rf darth_vader 
+➜  empire touch darth_vader.txt
+➜  empire ls
+darth_vader.txt
+➜  empire echo "...heavy breathing..." >> darth_vader.txt 
+➜  empire ls
+darth_vader.txt
+➜  empire cd ..
+➜  star_wars code .
+➜  star_wars empire 
+➜  empire touch emperor_palpatine.txt
+➜  empire ls
+darth_vader.txt       emperor_palpatine.txt
+➜  empire mkdir death_star
+➜  empire ls
+darth_vader.txt       death_star            emperor_palpatine.txt
+➜  empire mv darth_vader.txt death_star 
+➜  empire ls
+death_star            emperor_palpatine.txt
+➜  empire death_star 
+➜  death_star ls
+darth_vader.txt
+➜  death_star cd ..
+➜  empire cd ..
+➜  star_wars rebellion 
+➜  rebellion touch princess_leia.txt echo "Help me, Obi-Wan...You're my only hope." >> princess_leia.txt
+➜  rebellion ls
+Help me, Obi-Wan...You're my only hope. princess_leia.txt
+echo
+➜  rebellion rm Help\ me,\ Obi-Wan...You\'re\ my\ only\ hope. 
+➜  rebellion ls
+echo              princess_leia.txt
+➜  rebellion rm echo
+➜  rebellion rm princess_leia.txt 
+➜  rebellion ls
+➜  rebellion touch princess_leia.txt && echo "Help me, Obi-Wan...You're my only hope." >> princess_leia.txt 
+➜  rebellion ls
+princess_leia.txt
+➜  rebellion           
+➜  rebellion cat princess_leia.txt 
+Help me, Obi-Wan...You're my only hope.
+➜  rebellion touch obi_wan.txt
+➜  rebellion ls
+obi_wan.txt       princess_leia.txt
+➜  rebellion touch luke_skywalker.txt
+➜  rebellion ls
+luke_skywalker.txt obi_wan.txt        princess_leia.txt
+➜  rebellion ls -a
+.                  luke_skywalker.txt princess_leia.txt
+..                 obi_wan.txt
+➜  rebellion ls
+luke_skywalker.txt obi_wan.txt        princess_leia.txt
+➜  rebellion ls
+luke_skywalker.txt obi_wan.txt        princess_leia.txt
+➜  rebellion cd ..
+➜  star_wars mkdir millenium_falcon 
+➜  star_wars ls
+act1.sh          act2.sh          empire           millenium_falcon rebellion
+➜  star_wars millenium_falcon 
+➜  millenium_falcon cd ..  
+➜  star_wars clear
+
+➜  star_wars ls
+act1.sh          act2.sh          empire           millenium_falcon rebellion
+➜  star_wars mv millenium_falcon rebellion 
+➜  star_wars ls
+act1.sh   act2.sh   empire    rebellion
+➜  star_wars rebellion 
+➜  rebellion ls
+luke_skywalker.txt millenium_falcon   obi_wan.txt        princess_leia.txt
+➜  rebellion millenium_falcon 
+➜  millenium_falcon touch han_solo.txt chewbacca.txt
+➜  millenium_falcon ls
+chewbacca.txt han_solo.txt
+➜  millenium_falcon cd ..
+➜  rebellion mv luke_skywalker.txt obi_wan.txt princess_leia.txt millenium_falcon  
+➜  rebellion ls
+millenium_falcon
+➜  rebellion millenium_falcon 
+➜  millenium_falcon ls
+chewbacca.txt      luke_skywalker.txt princess_leia.txt
+han_solo.txt       obi_wan.txt
+➜  millenium_falcon cd ..
+➜  rebellion cd ..
+➜  star_wars rebellion 
+➜  rebellion ls
+millenium_falcon
+➜  rebellion cd ..
+➜  star_wars mv rebellion/millenium_falcon empire/death_star 
+➜  star_wars ls
+act1.sh   act2.sh   empire    rebellion
+➜  star_wars empire 
+➜  empire ls
+death_star            emperor_palpatine.txt
+➜  empire death_star 
+➜  death_star ls
+darth_vader.txt  millenium_falcon
+➜  death_star cd ..
+➜  empire cd ..
+➜  star_wars ls
+act1.sh   act2.sh   act3.sh   empire    rebellion
+➜  star_wars empire 
+➜  empire ls
+death_star            emperor_palpatine.txt
+➜  empire death_star 
+➜  death_star ls
+darth_vader.txt  millenium_falcon
+➜  death_star cd empirew                                
+cd: no such file or directory: empirew
+➜  death_star cd empire
+cd: no such file or directory: empire
+➜  death_star cd ..
+➜  empire mv cd ..
+mv: rename cd to ../cd: No such file or directory
+➜  empire ls                                                    
+death_star            emperor_palpatine.txt
+➜  empire death_star 
+➜  death_star millenium_falcon/
+➜  millenium_falcon mv chewbacca.txt luke_skywalker.txt princess_leia.txt obi_wan.txt han_solo.txt death_star/ 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  millenium_falcon ls
+chewbacca.txt      luke_skywalker.txt princess_leia.txt
+han_solo.txt       obi_wan.txt
+➜  millenium_falcon cd deathstar
+cd: no such file or directory: deathstar
+➜  millenium_falcon cd ..
+➜  death_star millenium_falcon 
+➜  millenium_falcon tree                                                                  
+zsh: command not found: tree
+➜  millenium_falcon mv luke_skywalker.txt princess_leia.txt obi_wan.txt chewbacca.txt han_solo.txt death_star/
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  millenium_falcon ls
+chewbacca.txt      luke_skywalker.txt princess_leia.txt
+han_solo.txt       obi_wan.txt
+➜  millenium_falcon mv luke_skywalker.txt princess_leia.txt han_solo.txt chewbacca.txt obi_wan.txt
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  millenium_falcon mv luke_skywalker.txt princess_leia.txt han_solo.txt chewbacca.txt obi_wan.txt -                   
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  millenium_falcon 
+➜  millenium_falcon 
+➜  millenium_falcon 
+➜  millenium_falcon clear
+
+➜  millenium_falcon history | tail -n 250
+  602  mkdir empire
+  603  mkdir rebellion
+  604  empire
+  605  mkdir darth_vader.txt
+  606  darth_vader.txt
+  607  touch. "...heavy breathing..."
+  608  touch "...heavy breathing..."
+  609  ls
+  610  cd Star_Wars
+  611  cd ~
+  612  ls
+  613  st
+  614  Star_Wars/ls
+  615  ls
+  616  Star_Wars
+  617  ls
+  618  empire
+  619  ls
+  620  darth_vader.txt
+  621  ls
+  622  cd ~
+  623  Star_Wars
+  624  empire
+  625  mkdir emperor_palpatine.txt
+  626  mkdir death_star
+  627  cd ~
+  628  mv darth_vader death_star
+  629  mv darth_vader.txt  death_star
+  630  Star_Wars
+  631  mv darth_vader death_star
+  632  empire
+  633  mv darth_vader.txt death_star
+  634  death_star
+  635  ls
+  636  cd ~
+  637  Star_Wars
+  638  mkdir princess_leia.txt touch "Help me, Obi-Wan…You’re my only hope."\n
+  639  princess_leia.txt/ls
+  640  ls
+  641  rebellion
+  642  mkdirobi_wan.txt
+  643  mkdir obi_wan.txt
+  644  mkdir luke_skywalker.txt
+  645  mkdir millenium_falcon
+  646  millenium_falcon
+  647  mkdir han_solo.txt chewbacca.txt
+  648  ls
+  649  chewbacca.txt
+  650  cd..
+  651  cd ..
+  652  ~ cd
+  653  cd ~
+  654  ls
+  655  Star_Wars
+  656  ls
+  657  rebellion
+  658  mv luke_skywalker/obi_wan/princess_leia millenium_falcon
+  659  ls
+  660  millenium_falcon
+  661  mv obi_wan.txt
+  662  ls
+  663  mv obi_wan.txt millenium_falcon
+  664  cd ..
+  665  rebellion
+  666  ls
+  667  mv luke_skywalker.txt millenium_falcon 
+  668  ls
+  669  mv obi_wan.txt millenium_falcon
+  670  ls
+  671  millenium_falcon
+  672  ls
+  673  cd ..
+  674  ls
+  675  millenium_falcon
+  676  ls
+  677  mkdir princess_leia
+  678  ls
+  679  cd ..
+  680  re
+  681  rebellion
+  682  ls
+  683  mv millenium_falcon
+  684  cd ..
+  685  empire
+  686  ls
+  687  mv millinium_falcon death_star
+  688  ls
+  689  death_star
+  690  ls
+  691  cd ..
+  692  Star_Wars
+  693  mv princess_leia.txt millimium_falcon
+  694  ls
+  695  millimium_falcon
+  696  ls
+  697  cd ..
+  698  ls
+  699  millimium_falcon
+  700  ls
+  701  cd ..
+  702  ;s
+  703  ls
+  704  cd devinsylvester/Star_Wars
+  705  rebellion
+  706  ls
+  707  mv millenium_falcon
+  708  mv millenium_falcon death_star
+  709  cd ..
+  710  ls
+  711  empire
+  712  ls
+  713  death_star
+  714  ls
+  715  mv millinium_falcon death_star
+  716  mv millenium_falcon death_star
+  717  ls
+  718  cd ..
+  719  ls
+  720  death_star/
+  721  ls
+  722  cd ..
+  723  devinsylvester
+  724  ls
+  725  Star_Wars
+  726  ls
+  727  rm rv/ obi_wan
+  728  rmdir obi_wan
+  729  db_deadlock README.md empire
+  730  empire
+  731  ls
+  732  death_star
+  733  ls
+  734  mellennium_falcon
+  735  ls
+  736  rmdir obi_wan
+  737  rm obi_wan.txt
+  738  cd ..
+  739  ls
+  740  open .
+  741  ls
+  742  SEI_321
+  743  ls
+  744  deliverables
+  745  ls
+  746  Star_Wars
+  747  code .
+  748  cd ..
+  749  rm Star_Wars
+  750  ls
+  751  rm -r Star_Wars
+  752  ls
+  753  mkdir star_wars
+  754  ls
+  755  star_wars
+  756  empire rebellion
+  757  ls
+  758  mkdir empire rebellion 
+  759  ls
+  760  empire
+  761  mkdir  darth_vader
+  762  darth_vader
+  763  cd ..
+  764  rm rf/ darth_vader
+  765  rm -rf darth_vader
+  766  touch darth_vader.txt
+  767  ls
+  768  echo "...heavy breathing..." >> darth_vader.txt
+  769  ls
+  770  cd ..
+  771  code .
+  772  empire
+  773  touch emperor_palpatine.txt
+  774  ls
+  775  mkdir death_star
+  776  ls
+  777  mv darth_vader.txt death_star
+  778  ls
+  779  death_star
+  780  ls
+  781  cd ..
+  782  rebellion
+  783  touch princess_leia.txt echo "Help me, Obi-Wan...You're my only hope." >> princess_leia.txt
+  784  ls
+  785  rm Help\ me,\ Obi-Wan...You\'re\ my\ only\ hope.
+  786  ls
+  787  rm echo
+  788  rm princess_leia.txt
+  789  ls
+  790  touch princess_leia.txt && echo "Help me, Obi-Wan...You're my only hope." >> princess_leia.txt
+  791  ls
+  792  cat princess_leia.txt
+  793  touch obi_wan.txt
+  794  ls
+  795  touch luke_skywalker.txt
+  796  ls
+  797  ls -a
+  798  ls
+  799  cd ..
+  800  mkdir millenium_falcon 
+  801  ls
+  802  millenium_falcon
+  803  cd ..
+  804  clear
+  805  ls
+  806  mv millenium_falcon rebellion 
+  807  ls
+  808  rebellion
+  809  ls
+  810  millenium_falcon
+  811  touch han_solo.txt chewbacca.txt
+  812  ls
+  813  cd ..
+  814  mv luke_skywalker.txt obi_wan.txt princess_leia.txt millenium_falcon
+  815  ls
+  816  millenium_falcon
+  817  ls
+  818  cd ..
+  819  rebellion
+  820  ls
+  821  cd ..
+  822  mv rebellion/millenium_falcon empire/death_star
+  823  ls
+  824  empire
+  825  ls
+  826  death_star
+  827  ls
+  828  cd ..
+  829  ls
+  830  empire
+  831  ls
+  832  death_star
+  833  ls
+  834  cd empirew
+  835  cd empire
+  836  cd ..
+  837  mv cd ..
+  838  ls
+  839  death_star
+  840  millenium_falcon/
+  841  mv chewbacca.txt luke_skywalker.txt princess_leia.txt obi_wan.txt han_solo.txt death_star/ 
+  842  ls
+  843  cd deathstar
+  844  cd ..
+  845  millenium_falcon
+  846  tree
+  847  mv luke_skywalker.txt princess_leia.txt obi_wan.txt chewbacca.txt han_solo.txt death_star/
+  848  ls
+  849  mv luke_skywalker.txt princess_leia.txt han_solo.txt chewbacca.txt obi_wan.txt
+  850  mv luke_skywalker.txt princess_leia.txt han_solo.txt chewbacca.txt obi_wan.txt -
+  851  clear
+➜  millenium_falcon 
